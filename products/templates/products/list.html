@@ -12,7 +12,7 @@
                 All Categories
             </a>
             {% for cat in categories %}
-                <a href="{{ cat.get_absolute_url }}" 
+                <a href="{{ cat.get_absolute_url }}/{{ cat.slug }}" 
                    class="list-group-item list-group-item-action {% if category.slug == cat.slug %}active{% endif %}">
                     {{ cat.name }}
                 </a>
